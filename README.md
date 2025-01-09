@@ -2,10 +2,12 @@
 
 1.Creacion de clases 
  1.1.Clase Login
+ 
  ![image](https://github.com/user-attachments/assets/f028b0d6-79f2-42e1-8c11-2eab19ee6c30)
  ![image](https://github.com/user-attachments/assets/d498737d-c6f5-4192-82a3-3bf0f284c5ed)
  ![image](https://github.com/user-attachments/assets/fe3c63fa-d7f5-42b2-b167-0e93df4c9e95)
  ![image](https://github.com/user-attachments/assets/19aef8ad-430d-4a3b-a109-6a081e803151)
+ 
 Librerías importadas:
 javax.swing.*:
 
