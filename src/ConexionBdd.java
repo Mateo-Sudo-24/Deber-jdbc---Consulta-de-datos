@@ -1,12 +1,15 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class ConexionBdd {
-    public static Connection getConnection() throws SQLException {
-        String url = "jdbc:mysql://localhost:3306/estudiantes2024b";
-        String usuario = "root";
-        String contraseña = "123456";
-        return DriverManager.getConnection(url, usuario, contraseña);
+    public static Connection getConnection() {
+        try {
+            // Asegúrate de que el driver esté cargado
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            // Configura la conexión a tu base de datos
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/estudiantes2024b", "root", "123456");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
